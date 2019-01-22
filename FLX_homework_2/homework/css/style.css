@@ -1,0 +1,161 @@
+@media print{
+
+    .tm-sidebar, #about, .heading, .blocks, #ideas, section.tm-content-box {
+        display: none;
+    }
+
+
+    .tm-main-content {
+        margin: auto;
+        padding: 0;
+    }
+
+    .tm-main-content section .tm-content-box div:last-child{
+        margin: 80px 0;
+    }
+
+    .tm-main-content section .tm-content-box img{
+        margin: auto;
+        height: 200px;
+        width: 200px;
+    }
+
+    .tm-banner {
+        margin: 80px auto 0 auto;
+        height: 250px;
+        width: 600px;
+    }
+
+    .tm-team-description-container{
+        margin: auto 30px;
+        width: 50%;
+        float: left;
+    }
+
+    .tm-content-box h2{
+        color: #3f51b5;
+    }
+}
+
+@media screen {
+
+    .box-bg:hover {
+        background-color: #87CEFA;
+        cursor: pointer;
+    }
+
+    .box-bg:hover h2{
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .tm-sidebar, .tm-content-box {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .tm-banner{
+        padding: 0;
+        border: 30px solid #f5f5f5;
+    }
+
+
+    section::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 250px 0 0;
+        border-color: #31b0d5 transparent transparent transparent;
+    }
+
+    #ideas .tm-section-title{
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    .tm-content-box .tm-team-description-container{
+        margin-top: 150px;
+        max-width: 360px;
+        float: left;
+    }
+
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+
+    h2 + p {
+        font-style: italic;
+    }
+
+    section p {
+        line-height: 1.5;
+        text-indent: 25px;
+    }
+
+    .heading a{
+        color: #000000;
+    }
+
+    .heading a:visited {
+        text-decoration: underline;
+    }
+
+    .heading a:hover {
+        color: #31b0d5;
+        text-decoration: underline;
+        text-decoration-style: double;
+    }
+
+    .heading a.text::after {
+        content: "New";
+        color: red;
+        font-size: 10px;
+        vertical-align: super;
+    }
+
+    .blocks .gallery-container .box:nth-child(even) {
+        background-color: gainsboro;
+    }
+
+    .blocks .gallery-container .box{
+        padding: 10px;
+    }
+
+    .blocks .gallery-container .box h2{
+        color: #000000;
+    }
+    .blocks .gallery-container .box p:first-letter{
+        color: black;
+    }
+
+    .blocks .gallery-container .box p{
+        line-height: 1.5;
+        text-indent: 0;
+    }
+
+
+    .contact-form button{
+        float: right;
+        width: 150px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 0;
+        border: 1px solid #32b5de;
+        color: #32b5de;
+    }
+
+    .contact-form button:hover{
+        background-color: #32b5de;
+    }
+
+    .tm-sidebar nav li:hover{
+        background-color: #f5f5f5;
+    }
+
+    .mandatory-field::after {
+        content: "*";
+        color: red;
+    }
+}
